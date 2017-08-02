@@ -29,7 +29,7 @@ SECRET_KEY = os.environ.get('DJANGO_SECRET_KEY', 'rs74s*t+nkb3u_4kias5tyb3$7bu&-
 # DJANGO_DEBUG environment variable is set to an empty string, e.g. DJANGO_DEBUG=''.
 DEBUG = bool(os.environ.get('DJANGO_DEBUG', True))
 
-ALLOWED_HOSTS = []
+ALLOWED_HOSTS = ['*']
 
 
 # Application definition
