@@ -1,0 +1,35 @@
+{% extends 'filiados/base.html' %}
+
+{% block body %}
+<div class="container">
+    <h3>Pressione <strong>Ctrl + F</strong> e digite o nome da Academia para localizá-la na lista</h3>
+    <div class="col-sm-12 col-md-12 col-lg-12">
+        <div class="panel panel-default"
+             <div class="panel-body">
+                 <h3>Academias Filiadas - 2017</h3>
+                 <table class="table">
+                     <thead>
+                     <tr>
+                         <th>Academia</th>
+                         <th>Estado</th>
+                         <th>Cidade</th>
+                         <th>Professor</th>
+                         <th>Registro</th>
+                     </tr>
+                     </thead>
+                     <tbody>
+                     {% for academia in todas_academias %}
+                     <tr>
+                         <td>{{ academia.nome_academia }}</td>
+                         <td>{{ academia.estado }}</td>
+                         <td>{{ academia.cidade }}</td>
+                         <td>{{ academia.professor }}</td>
+                         <td>{{ academia.num_alvara }}</td>
+                     </tr>
+                     {% endfor %}
+                     </tbody>
+                 </table>
+             </div>
+    </div>
+</div>
+{% endblock %}

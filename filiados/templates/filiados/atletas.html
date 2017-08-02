@@ -1,0 +1,31 @@
+{% extends 'filiados/base.html' %}
+
+{% block body %}
+<div class="container">
+    <h3>Pressione <strong>Ctrl + F</strong> e digite o nome do Atleta para localizá-lo na lista</h3>
+    <div class="col-sm-12 col-md-12 col-lg-12">
+        <div class="panel panel-default"
+             <div class="panel-body">
+                 <h3>Atletas Filiados - 2017</h3>
+                 <table class="table">
+                     <thead>
+                     <tr>
+                         <th>Nome</th>
+                         <th>Academia</th>
+                         <th>Número de Registro</th>
+                     </tr>
+                     </thead>
+                     <tbody>
+                     {% for atleta in todos_atletas %}
+                     <tr>
+                         <td>{{ atleta.nome_atleta }}</td>
+                         <td>{{ atleta.academia }}</td>
+                         <td>{{ atleta.num_registro }}</td>
+                     </tr>
+                     {% endfor %}
+                     </tbody>
+                 </table>
+             </div>
+    </div>
+</div>
+{% endblock %}
