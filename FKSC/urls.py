@@ -22,7 +22,7 @@ urlpatterns = [
     url(r'^admin/', admin.site.urls),
     url(r'^filiados/', include('filiados.urls')),
     url(r'^campeonatos/', include('campeonatos.urls')),
-    url(r'^inicial/', include('inicial.urls')),
+    url(r'^', include('inicial.urls')),
 ]
 
 if settings.DEBUG:

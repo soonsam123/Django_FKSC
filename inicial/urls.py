@@ -4,12 +4,12 @@ from . import views
 app_name = 'inicial'
 
 urlpatterns = [
-    # /inicial/
+    #/
     url(r'^$', views.index, name='index'),
 
-    #/inicial/contato
+    #/contato/
     url(r'^contato/$', views.contato, name='contato'),
 
-    #/inicial/ranking
+    #/ranking/
     url(r'^ranking/$', views.ranking, name='ranking'),
 ]
