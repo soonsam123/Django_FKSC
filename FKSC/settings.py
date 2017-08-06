@@ -44,7 +44,6 @@ INSTALLED_APPS = [
     'filiados.apps.FiliadosConfig',
     'campeonatos.apps.CampeonatosConfig',
     'inicial.apps.InicialConfig',
-    'storages',
 ]
 
 MIDDLEWARE = [
