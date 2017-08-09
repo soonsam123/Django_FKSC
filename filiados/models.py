@@ -23,8 +23,8 @@ class Atleta(models.Model):
 
 class Preta(models.Model):
     nome_preta = models.CharField(max_length=100)
-    academia = models.CharField(max_length=200)
-    num_registro = models.IntegerField()
+    acad = models.CharField(max_length=200)
+    reg = models.IntegerField()
 
     def __str__(self):
         return self.nome_preta
