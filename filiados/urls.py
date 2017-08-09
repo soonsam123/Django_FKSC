@@ -12,5 +12,8 @@ urlpatterns = [
 
     # /filiados/atletas/
     url(r'^atletas/$', views.atletas, name='atletas'),
+
+    # /filiados/pretas/
+    url(r'^pretas/$', views.pretas, name='pretas'),
 ]
 

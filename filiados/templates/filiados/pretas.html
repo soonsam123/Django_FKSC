@@ -1,0 +1,30 @@
+{% extends 'filiados/base.html' %}
+
+{% block body %}
+<div class="container">
+    <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12">
+        <div class="panel panel-default"
+             <div class="panel-body">
+                 <h3>Faixas Pretas Registrados</h3>
+                 <table class="table">
+                     <thead>
+                     <tr>
+                         <th>Nome</th>
+                         <th>Academia</th>
+                         <th>Número de Registro</th>
+                     </tr>
+                     </thead>
+                     <tbody>
+                     {% for preta in todos_pretas %}
+                     <tr>
+                         <td>{{ preta.nome_preta }}</td>
+                         <td>{{ preta.academia }}</td>
+                         <td>{{ preta.num_registro }}</td>
+                     </tr>
+                     {% endfor %}
+                     </tbody>
+                 </table>
+             </div>
+    </div>
+</div>
+{% endblock %}
