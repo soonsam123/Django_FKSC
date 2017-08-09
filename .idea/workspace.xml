@@ -3,7 +3,6 @@
   <component name="ChangeListManager">
     <list default="true" id="8e393b0c-759f-43b1-b473-b980565ca4d9" name="Default" comment="">
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/filiados/models.py" afterPath="$PROJECT_DIR$/filiados/models.py" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/filiados/templates/filiados/pretas.html" afterPath="$PROJECT_DIR$/filiados/templates/filiados/pretas.html" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="TRACKING_ENABLED" value="true" />
@@ -28,8 +27,8 @@
       <file leaf-file-name="models.py" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/filiados/models.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="527">
-              <caret line="26" column="29" lean-forward="true" selection-start-line="26" selection-start-column="29" selection-end-line="26" selection-end-column="29" />
+            <state relative-caret-position="620">
+              <caret line="22" column="0" lean-forward="true" selection-start-line="22" selection-start-column="0" selection-end-line="22" selection-end-column="0" />
               <folding />
             </state>
           </provider>
@@ -803,8 +802,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/filiados/models.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="527">
-          <caret line="26" column="29" lean-forward="true" selection-start-line="26" selection-start-column="29" selection-end-line="26" selection-end-column="29" />
+        <state relative-caret-position="620">
+          <caret line="22" column="0" lean-forward="true" selection-start-line="22" selection-start-column="0" selection-end-line="22" selection-end-column="0" />
           <folding />
         </state>
       </provider>
