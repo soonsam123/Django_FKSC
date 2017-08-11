@@ -23,6 +23,7 @@ urlpatterns = [
     url(r'^filiados/', include('filiados.urls')),
     url(r'^campeonatos/', include('campeonatos.urls')),
     url(r'^', include('inicial.urls')),
+    url(r'^videos/', include('videos.urls')),
 ]
 
 if settings.DEBUG:

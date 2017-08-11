@@ -1,0 +1,18 @@
+{% extends 'filiados/base.html' %}
+{% block head %}{% load staticfiles %}{% endblock %}
+{% block body %}
+
+<div class="container">
+    <div class="row">
+        <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12">
+            {% for video in todos_videos %}
+            <h2>{{video.titulo}}</h2>
+            <div class="responsive-video">
+                <iframe src="{{video.link}}" frameborder="0" allowfullscreen></iframe>
+            </div>
+            {% endfor %}
+        </div>
+    </div>
+</div>
+
+{% endblock %}
