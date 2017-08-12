@@ -1,0 +1,26 @@
+{% extends 'filiados/base.html' %}
+{% block head %}{% load staticfiles %}{% endblock %}
+{% block body %}
+
+<div class="container">
+    <div class="row">
+        {% for campeonato in todos_campeonatos %}
+        <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12">
+            <div class="thumbnail">
+                <a href="{% url 'ranking:detail' campeonato.id %}">
+                    <img src="{{campeonato.cartaz.url}}" class="img-responsive">
+                </a>
+                <div class="caption">
+                    <h2>{{campeonato.nome_campeonato}}</h2>
+                    <h4>{{campeonato.est_cidade}}</h4>
+                    <a href="{% url 'ranking:detail' campeonato.id %}" class="btn btn-primary btn-sm" role="button">
+                        <h4>RESULTADO</h4>
+                    </a>
+                </div>
+            </div>
+        </div>
+        {% endfor %}
+    </div>
+</div>
+
+{% endblock %}

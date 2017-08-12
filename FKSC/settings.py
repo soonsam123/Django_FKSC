@@ -45,6 +45,7 @@ INSTALLED_APPS = [
     'campeonatos.apps.CampeonatosConfig',
     'inicial.apps.InicialConfig',
     'videos.apps.VideosConfig',
+    'ranking.apps.RankingConfig',
 ]
 
 MIDDLEWARE = [
@@ -136,9 +137,9 @@ STATICFILES_DIRS = [
 ]
 # Powershell --> python manage.py collectstatic so the static files will go to static_cdn
 # this must be outside of the project. Another server.
-STATIC_ROOT = os.path.join(BASE_DIR, 'staticfiles')
-MEDIA_ROOT = os.path.join(BASE_DIR, "media")
-MEDIA_URL = '/media/'
+STATIC_ROOT = os.path.join(os.path.dirname(BASE_DIR), "static_cdn")
+MEDIA_ROOT = os.path.join(os.path.dirname(BASE_DIR), "media_cdn")
+MEDIA_URL = '/media_cdn/'
 
 # Heroku: Update database configuration from $DATABASE_URL
 import dj_database_url

@@ -24,6 +24,7 @@ urlpatterns = [
     url(r'^campeonatos/', include('campeonatos.urls')),
     url(r'^', include('inicial.urls')),
     url(r'^videos/', include('videos.urls')),
+    url(r'^ranking/', include('ranking.urls')),
 ]
 
 if settings.DEBUG:

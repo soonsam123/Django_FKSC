@@ -1,0 +1,58 @@
+{% extends 'filiados/base.html' %}
+{% block head %}{% load staticfiles %}{% endblock %}
+{% block body %}
+
+<!-- idade, faixa, sexo, modalidade, primeiro, acad_primeiro, segundo, acad_segundo, terceiro, acad_terceiro-->
+
+<div class="container">
+    <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12">
+        <div class="panel panel-default">
+            <div class="panel-body">
+                <h1>{{rank_campeonato.nome_campeonato}}</h1>
+                <h4>{{rank_campeonato.est_cidade}}</h4><br>
+                {% for categoria in rank_campeonato.categoria_set.all %}
+                <span class="glyphicon glyphicon-user">
+                    <button class="btn btn-primary">{{categoria.idade}}</button>
+                </span>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                <span class="glyphicon glyphicon-education">
+                    <button class="btn btn-warning">{{categoria.faixa}}</button>
+                </span>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                <span class="glyphicon glyphicon-adjust">
+                    <button class="btn btn-secondary">{{categoria.sexo}}</button>
+                </span>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                <span class="glyphicon glyphicon-globe">
+                    <button class="btn btn-info">{{categoria.modalidade}}</button>
+                </span>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                <table class="table">
+                    <thead class="thead-inverse">
+                    <tr>
+                        <th>Colocação</th>
+                        <th>Nome</th>
+                        <th>Academia</th>
+                    </tr>
+                    </thead>
+                    <tbody>
+                    <tr>
+                        <td>1</td>
+                        <td>{{categoria.primeiro}}</td>
+                        <td>{{categoria.acad_primeiro}}</td>
+                    </tr>
+                    <tr>
+                        <td>2</td>
+                        <td>{{categoria.segundo}}</td>
+                        <td>{{categoria.acad_segundo}}</td>
+                    </tr>
+                    <tr>
+                        <td>3</td>
+                        <td>{{categoria.terceiro}}</td>
+                        <td>{{categoria.acad_terceiro}}</td>
+                    </tr>
+                    </tbody>
+                </table>
+                {% endfor %}
+            </div>
+        </div>
+    </div>
+</div>
+
+{% endblock %}
