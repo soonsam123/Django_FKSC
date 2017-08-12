@@ -137,8 +137,8 @@ STATICFILES_DIRS = [
 ]
 # Powershell --> python manage.py collectstatic so the static files will go to static_cdn
 # this must be outside of the project. Another server.
-STATIC_ROOT = os.path.join(os.path.dirname(BASE_DIR), "staticfiles")
-MEDIA_ROOT = os.path.join(os.path.dirname(BASE_DIR), "media")
+STATIC_ROOT = os.path.join(BASE_DIR, "staticfiles")
+MEDIA_ROOT = os.path.join(BASE_DIR, "media")
 MEDIA_URL = '/media/'
 
 # Heroku: Update database configuration from $DATABASE_URL
