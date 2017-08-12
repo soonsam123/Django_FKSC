@@ -9,7 +9,4 @@ urlpatterns = [
 
     #/contato/
     url(r'^contato/$', views.contato, name='contato'),
-
-    #/ranking/
-    url(r'^ranking/$', views.ranking, name='ranking'),
 ]
