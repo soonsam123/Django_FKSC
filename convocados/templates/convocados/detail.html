@@ -1,0 +1,52 @@
+{% extends 'filiados/base.html' %}
+
+{% block body %}
+<div class="container">
+    <h3><strong>COMO LOCALIZAR O NOME DE UM ATLETA?</strong></h3>
+    <dl>
+        <dt>NO COMPUTADOR</dt>
+            <dd>1. Pressione Ctrl + F</dd>
+            <dd>2. Uma barra de pesquisa aparecerá no canto superior direto do seu navegador</dd>
+            <dd>3. Digite o primeiro nome do Atleta</dd>
+            <dd>4. Você será levado para os resultados correspondentes</dd>
+            <dd>5. Pressione Enter para passar pelos resultados</dd>
+        <dt>NO CELULAR</dt>
+            <dd>1. Clique nos três pontinhos verticais no canto superior direto do seu navegador</dd>
+            <dd>2. Uma barra de pesquisa aparecerá</dd>
+            <dd>3. Digite o primeiro nome do Atleta</dd>
+            <dd>4. Você será levado para os resultados correspondentes</dd>
+            <dd>5. Clique na tecla "para baixo" para passar pelos resultados</dd>
+    </dl>
+    <h4><strong>Observação: O site está em construção, nos ajude nessa tarefa!<br>
+        Caso encontre alguma informação errada entre em contato conosco que resolveremos o problema</strong></h4>
+    <div class="thumbnail">
+         <img src="{{convocado_campeonato.cartaz.url}}" class="img-responsive">
+    </div>
+    <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12">
+        <div class="panel panel-default"
+             <div class="panel-body">
+                 <h3>Atletas Convocados - 2017</h3>
+                 <table class="table">
+                     <thead>
+                     <tr>
+                         <th>Nome</th>
+                         <th>Academia</th>
+                         <th>Faixa</th>
+                         <th>Número de Registro</th>
+                     </tr>
+                     </thead>
+                     <tbody>
+                     {% for atleta in convocado_campeonato.convocados_set.all %}
+                     <tr>
+                         <td>{{ atleta.nome }}</td>
+                         <td>{{ atleta.academia }}</td>
+                         <td>{{ atleta.faixa }}</td>
+                         <td>{{ atleta.reg_fed }}</td>
+                     </tr>
+                     {% endfor %}
+                     </tbody>
+                 </table>
+             </div>
+    </div>
+</div>
+{% endblock %}

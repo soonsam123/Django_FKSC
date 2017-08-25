@@ -25,6 +25,7 @@ urlpatterns = [
     url(r'^', include('inicial.urls')),
     url(r'^videos/', include('videos.urls')),
     url(r'^ranking/', include('ranking.urls')),
+    url(r'^convocados/', include('convocados.urls')),
 ]
 
 if settings.DEBUG:

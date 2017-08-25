@@ -46,6 +46,7 @@ INSTALLED_APPS = [
     'inicial.apps.InicialConfig',
     'videos.apps.VideosConfig',
     'ranking.apps.RankingConfig',
+    'convocados.apps.ConvocadosConfig',
 ]
 
 MIDDLEWARE = [
