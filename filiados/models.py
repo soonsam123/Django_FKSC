@@ -8,7 +8,7 @@ class Academia(models.Model):
     rua = models.CharField(max_length=200)
     bairro = models.CharField(max_length=200)
     cep = models.IntegerField()
-    num_alvara = models.IntegerField()
+    num_reg = models.IntegerField()
 
     def __str__(self):
         return self.nome_academia +' - '+ self.cidade
@@ -16,7 +16,7 @@ class Academia(models.Model):
 class Atleta(models.Model):
     nome_atleta = models.CharField(max_length=100)
     academia = models.CharField(max_length=200)
-    num_registro = models.IntegerField()
+    num_reg = models.IntegerField()
 
     def __str__(self):
         return self.nome_atleta
@@ -24,7 +24,7 @@ class Atleta(models.Model):
 class Preta(models.Model):
     nome_preta = models.CharField(max_length=100)
     academia = models.CharField(max_length=200)
-    num_registro = models.IntegerField()
+    num_reg = models.IntegerField()
 
     def __str__(self):
         return self.nome_preta
