@@ -23,5 +23,5 @@ class Categoria(models.Model):
     acad_terceiro = models.CharField(max_length=200)
 
     def __str__(self):
-        return self.idade +'/'+ self.faixa +'/'+ self.sexo +'/'+ self.modalidade
+        return self.idade +'/'+ self.faixa +'/'+ self.sexo +'/'+ self.modalidade + ' - ' + self.rank_campeonato
 
