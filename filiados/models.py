@@ -8,7 +8,7 @@ class Academia(models.Model):
     rua = models.CharField(max_length=200)
     bairro = models.CharField(max_length=200)
     cep = models.IntegerField()
-    num_reg = models.IntegerField()
+    num_reg = models.IntegerField(default=1)
 
     def __str__(self):
         return self.nome_academia +' - '+ self.cidade

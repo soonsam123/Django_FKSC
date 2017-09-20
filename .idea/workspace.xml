@@ -2,22 +2,11 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="8e393b0c-759f-43b1-b473-b980565ca4d9" name="Default" comment="">
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/filiados/migrations/0005_merge_20170920_1614.py" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/filiados/templates/filiados/base.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/filiados/templates/filiados/index.html" afterPath="" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/campeonatos/templates/campeonatos/index.html" afterPath="$PROJECT_DIR$/campeonatos/templates/campeonatos/index.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/convocados/templates/convocados/detail.html" afterPath="$PROJECT_DIR$/convocados/templates/convocados/detail.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/convocados/templates/convocados/index.html" afterPath="$PROJECT_DIR$/convocados/templates/convocados/index.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/filiados/migrations/0003_preta.py" afterPath="$PROJECT_DIR$/filiados/migrations/0003_preta.py" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/filiados/templates/filiados/academias.html" afterPath="$PROJECT_DIR$/filiados/templates/filiados/academias.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/filiados/templates/filiados/atletas.html" afterPath="$PROJECT_DIR$/filiados/templates/filiados/atletas.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/filiados/templates/filiados/base.html" afterPath="$PROJECT_DIR$/filiados/templates/filiados/base.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/filiados/templates/filiados/pretas.html" afterPath="$PROJECT_DIR$/filiados/templates/filiados/pretas.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/filiados/views.py" afterPath="$PROJECT_DIR$/filiados/views.py" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/inicial/templates/inicial/index.html" afterPath="$PROJECT_DIR$/inicial/templates/inicial/index.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/inicial/urls.py" afterPath="$PROJECT_DIR$/inicial/urls.py" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/inicial/views.py" afterPath="$PROJECT_DIR$/inicial/views.py" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/ranking/templates/ranking/detail.html" afterPath="$PROJECT_DIR$/ranking/templates/ranking/detail.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/ranking/templates/ranking/index.html" afterPath="$PROJECT_DIR$/ranking/templates/ranking/index.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/videos/templates/videos/index.html" afterPath="$PROJECT_DIR$/videos/templates/videos/index.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/filiados/models.py" afterPath="$PROJECT_DIR$/filiados/models.py" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="TRACKING_ENABLED" value="true" />
@@ -28,11 +17,11 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="375">
-      <file leaf-file-name="settings.py" pinned="false" current-in-tab="true">
+      <file leaf-file-name="settings.py" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/FKSC/settings.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="505">
-              <caret line="147" column="40" lean-forward="false" selection-start-line="147" selection-start-column="40" selection-end-line="147" selection-end-column="40" />
+            <state relative-caret-position="402">
+              <caret line="145" column="12" lean-forward="false" selection-start-line="145" selection-start-column="12" selection-end-line="145" selection-end-column="12" />
               <folding />
             </state>
           </provider>
@@ -41,8 +30,28 @@
       <file leaf-file-name="index.html" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/campeonatos/templates/campeonatos/index.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="248">
+            <state relative-caret-position="207">
               <caret line="8" column="22" lean-forward="true" selection-start-line="8" selection-start-column="22" selection-end-line="8" selection-end-column="22" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="models.py" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/campeonatos/models.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="0">
+              <caret line="0" column="28" lean-forward="true" selection-start-line="0" selection-start-column="28" selection-end-line="0" selection-end-column="28" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="models.py" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/filiados/models.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="310">
+              <caret line="10" column="44" lean-forward="false" selection-start-line="10" selection-start-column="44" selection-end-line="10" selection-end-column="44" />
               <folding />
             </state>
           </provider>
@@ -58,6 +67,12 @@
         <option value="HTML File" />
       </list>
     </option>
+  </component>
+  <component name="FindInProjectRecents">
+    <findStrings>
+      <find>cartaz = models.FileField(default='/static/images/logo.jpg')</find>
+      <find>num_alvara</find>
+    </findStrings>
   </component>
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
@@ -87,12 +102,12 @@
         <option value="$PROJECT_DIR$/filiados/templates/filiados/academias.html" />
         <option value="$PROJECT_DIR$/filiados/templates/filiados/atletas.html" />
         <option value="$PROJECT_DIR$/filiados/templates/filiados/pretas.html" />
-        <option value="$PROJECT_DIR$/filiados/models.py" />
         <option value="$PROJECT_DIR$/filiados/views.py" />
         <option value="$PROJECT_DIR$/ranking/models.py" />
         <option value="$PROJECT_DIR$/inicial/templates/inicial/index.html" />
         <option value="$PROJECT_DIR$/ranking/templates/ranking/index.html" />
         <option value="$PROJECT_DIR$/ranking/views.py" />
+        <option value="$PROJECT_DIR$/filiados/models.py" />
       </list>
     </option>
   </component>
@@ -133,7 +148,56 @@
             <path>
               <item name="Django_FKSC" type="b2602c69:ProjectViewProjectNode" />
               <item name="Django_FKSC" type="462c0819:PsiDirectoryNode" />
-              <item name="FKSC" type="462c0819:PsiDirectoryNode" />
+              <item name="campeonatos" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="Django_FKSC" type="b2602c69:ProjectViewProjectNode" />
+              <item name="Django_FKSC" type="462c0819:PsiDirectoryNode" />
+              <item name="campeonatos" type="462c0819:PsiDirectoryNode" />
+              <item name="templates" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="Django_FKSC" type="b2602c69:ProjectViewProjectNode" />
+              <item name="Django_FKSC" type="462c0819:PsiDirectoryNode" />
+              <item name="campeonatos" type="462c0819:PsiDirectoryNode" />
+              <item name="templates" type="462c0819:PsiDirectoryNode" />
+              <item name="campeonatos" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="Django_FKSC" type="b2602c69:ProjectViewProjectNode" />
+              <item name="Django_FKSC" type="462c0819:PsiDirectoryNode" />
+              <item name="filiados" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="Django_FKSC" type="b2602c69:ProjectViewProjectNode" />
+              <item name="Django_FKSC" type="462c0819:PsiDirectoryNode" />
+              <item name="filiados" type="462c0819:PsiDirectoryNode" />
+              <item name="templates" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="Django_FKSC" type="b2602c69:ProjectViewProjectNode" />
+              <item name="Django_FKSC" type="462c0819:PsiDirectoryNode" />
+              <item name="filiados" type="462c0819:PsiDirectoryNode" />
+              <item name="templates" type="462c0819:PsiDirectoryNode" />
+              <item name="filiados" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="Django_FKSC" type="b2602c69:ProjectViewProjectNode" />
+              <item name="Django_FKSC" type="462c0819:PsiDirectoryNode" />
+              <item name="inicial" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="Django_FKSC" type="b2602c69:ProjectViewProjectNode" />
+              <item name="Django_FKSC" type="462c0819:PsiDirectoryNode" />
+              <item name="inicial" type="462c0819:PsiDirectoryNode" />
+              <item name="templates" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="Django_FKSC" type="b2602c69:ProjectViewProjectNode" />
+              <item name="Django_FKSC" type="462c0819:PsiDirectoryNode" />
+              <item name="inicial" type="462c0819:PsiDirectoryNode" />
+              <item name="templates" type="462c0819:PsiDirectoryNode" />
+              <item name="inicial" type="462c0819:PsiDirectoryNode" />
             </path>
           </expand>
           <select />
@@ -374,27 +438,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/filiados/templates/filiados/pretas.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1178">
-          <caret line="38" column="45" lean-forward="false" selection-start-line="38" selection-start-column="45" selection-end-line="38" selection-end-column="45" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/filiados/templates/filiados/atletas.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1178">
-          <caret line="38" column="46" lean-forward="false" selection-start-line="38" selection-start-column="46" selection-end-line="38" selection-end-column="46" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/filiados/templates/filiados/academias.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1302">
-          <caret line="42" column="41" lean-forward="false" selection-start-line="42" selection-start-column="41" selection-end-line="42" selection-end-column="48" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/inicial/templates/inicial/contato.html">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="248">
@@ -462,14 +505,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/campeonatos/models.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="217">
-          <caret line="7" column="4" lean-forward="false" selection-start-line="7" selection-start-column="4" selection-end-line="7" selection-end-column="64" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/campeonatos/urls.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="186">
@@ -521,30 +556,6 @@
           <folding>
             <element signature="e#0#32#0" expanded="false" />
           </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/filiados/models.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="248">
-          <caret line="20" column="18" lean-forward="false" selection-start-line="20" selection-start-column="18" selection-end-line="20" selection-end-column="18" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/filiados/urls.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="465">
-          <caret line="16" column="33" lean-forward="true" selection-start-line="16" selection-start-column="33" selection-end-line="16" selection-end-column="33" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/filiados/views.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-565">
-          <caret line="1" column="0" lean-forward="false" selection-start-line="1" selection-start-column="0" selection-end-line="1" selection-end-column="35" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -656,18 +667,76 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/campeonatos/templates/campeonatos/index.html">
+    <entry file="file://$PROJECT_DIR$/filiados/views.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="248">
-          <caret line="8" column="22" lean-forward="true" selection-start-line="8" selection-start-column="22" selection-end-line="8" selection-end-column="22" />
+        <state relative-caret-position="227">
+          <caret line="16" column="38" lean-forward="false" selection-start-line="16" selection-start-column="38" selection-end-line="16" selection-end-column="38" />
+          <folding>
+            <element signature="e#0#43#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/filiados/templates/filiados/academias.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-610">
+          <caret line="72" column="46" lean-forward="true" selection-start-line="72" selection-start-column="46" selection-end-line="72" selection-end-column="46" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/filiados/templates/filiados/pretas.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="650">
+          <caret line="38" column="45" lean-forward="false" selection-start-line="38" selection-start-column="45" selection-end-line="38" selection-end-column="45" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/filiados/urls.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="445">
+          <caret line="16" column="33" lean-forward="true" selection-start-line="16" selection-start-column="33" selection-end-line="16" selection-end-column="33" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/filiados/templates/filiados/atletas.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="650">
+          <caret line="38" column="26" lean-forward="true" selection-start-line="38" selection-start-column="26" selection-end-line="38" selection-end-column="26" />
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/FKSC/settings.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="505">
-          <caret line="147" column="40" lean-forward="false" selection-start-line="147" selection-start-column="40" selection-end-line="147" selection-end-column="40" />
+        <state relative-caret-position="402">
+          <caret line="145" column="12" lean-forward="false" selection-start-line="145" selection-start-column="12" selection-end-line="145" selection-end-column="12" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/campeonatos/templates/campeonatos/index.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="207">
+          <caret line="8" column="22" lean-forward="true" selection-start-line="8" selection-start-column="22" selection-end-line="8" selection-end-column="22" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/campeonatos/models.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="28" lean-forward="true" selection-start-line="0" selection-start-column="28" selection-end-line="0" selection-end-column="28" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/filiados/models.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="310">
+          <caret line="10" column="44" lean-forward="false" selection-start-line="10" selection-start-column="44" selection-end-line="10" selection-end-column="44" />
           <folding />
         </state>
       </provider>
