@@ -2,7 +2,7 @@ from .models import Academia, Atleta, Preta
 from django.shortcuts import render
 
 def index(request):
-    return render(request, 'filiados/index.html')
+    return render(request, 'inicial/index.html')
 
 def ordenar_num(lista):
     for i in range(0,len(lista)):
@@ -22,7 +22,6 @@ def ordenar(todas_academias):
             if reg == academia.num_reg:
                 nova_lista_academias = nova_lista_academias + [academia]
     return nova_lista_academias
-
 
 def academias(request):
     todas_academias = Academia.objects.all()
